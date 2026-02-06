@@ -1,0 +1,25 @@
+* Host localhost:8000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8000...
+* connect to ::1 port 8000 from ::1 port 63895 failed: Connection refused
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000
+> GET /stream HTTP/1.1
+> Host: localhost:8000
+> User-Agent: curl/8.7.1
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< date: Fri, 06 Feb 2026 12:01:10 GMT
+< server: uvicorn
+< content-type: application/x-ndjson
+< transfer-encoding: chunked
+< 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0{ [180 bytes data]
+{"message": "Optimizing weights", "level": "INFO", "agent_id": "DeepSeek-V3", "strategy_name": "DeepDeep", "hashrate": "450 TH/s", "timestamp": "2026-02-06T17:31:11.293361"}
+{"message": "Pruning layers", "level": "WARNING", "agent_id": "GPT-4o-Mini", "strategy_name": "MiniMode", "hashrate": "120 TH/s", "timestamp": "2026-02-06T17:31:12.289015"}
+100   347    0   347    0     0    155      0 --:--:--  0:00:02 --:--:--   155100   347    0   347    0     0    107      0 --:--:--  0:00:03 --:--:--   107100   347    0   347    0     0     81      0 --:--:--  0:00:04 --:--:--    81100   347    0   347    0     0     66      0 --:--:--  0:00:05 --:--:--    68100   347    0   347    0     0     55      0 --:--:--  0:00:06 --:--:--    68100   347    0   347    0     0     47      0 --:--:--  0:00:07 --:--:--     0100   347    0   347    0     0     42      0 --:--:--  0:00:08 --:--:--     0100   347    0   347    0     0     37      0 --:--:--  0:00:09 --:--:--     0100   347    0   347    0     0     33      0 --:--:--  0:00:10 --:--:--     0100   347    0   347    0     0     30      0 --:--:--  0:00:11 --:--:--     0100   347    0   347    0     0     28      0 --:--:--  0:00:12 --:--:--     0100   347    0   347    0     0     26      0 --:--:--  0:00:13 --:--:--     0100   347    0   347    0     0     24      0 --:--:--  0:00:14 --:--:--     0100   347    0   347    0     0     22      0 --:--:--  0:00:15 --:--:--     0100   347    0   347    0     0     21      0 --:--:--  0:00:16 --:--:--     0100   347    0   347    0     0     20      0 --:--:--  0:00:17 --:--:--     0100   347    0   347    0     0     18      0 --:--:--  0:00:18 --:--:--     0100   347    0   347    0     0     17      0 --:--:--  0:00:19 --:--:--     0100   347    0   347    0     0     17      0 --:--:--  0:00:20 --:--:--     0100   347    0   347    0     0     16      0 --:--:--  0:00:21 --:--:--     0
